@@ -7,6 +7,7 @@
 		echo $this->Form->input('cliente_id');
 		echo $this->Form->input('data_inicio');
 		echo $this->Form->input('data_final');
+		
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit', true));?>
