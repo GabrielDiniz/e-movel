@@ -1,0 +1,24 @@
+<div class="cidades form">
+<?php echo $this->Form->create('Cidade');?>
+	<fieldset>
+		<legend><?php __('Edit Cidade'); ?></legend>
+	<?php
+		echo $this->Form->input('id');
+		echo $this->Form->input('estado_id');
+		echo $this->Form->input('nome');
+	?>
+	</fieldset>
+<?php echo $this->Form->end(__('Submit', true));?>
+</div>
+<div class="actions">
+	<h3><?php __('Actions'); ?></h3>
+	<ul>
+
+		<li><?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $this->Form->value('Cidade.id')), null, sprintf(__('Are you sure you want to delete # %s?', true), $this->Form->value('Cidade.id'))); ?></li>
+		<li><?php echo $this->Html->link(__('List Cidades', true), array('action' => 'index'));?></li>
+		<li><?php echo $this->Html->link(__('List Estados', true), array('controller' => 'estados', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Estado', true), array('controller' => 'estados', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Bairros', true), array('controller' => 'bairros', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Bairro', true), array('controller' => 'bairros', 'action' => 'add')); ?> </li>
+	</ul>
+</div>
